@@ -1,6 +1,6 @@
 # Sophia Barnes — Personal Website
 
-A minimalist, high-performance personal website built with Next.js 16 and Tailwind CSS 4. This site features a custom AI agent designed to help visitors learn about my background, projects, and career interests in Sales Engineering and AI infrastructure.
+A minimalist, high-performance personal website built with Next.js 16 and Tailwind CSS 4. This site features a custom AI agent designed to help visitors learn about my background, projects, and career interests.
 
 ## 🚀 Key Features
 
