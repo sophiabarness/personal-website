@@ -10,7 +10,7 @@
     "@ai-sdk/openai": "^3.0.37",
     "@ai-sdk/react": "2.0.123",
     "@braintrust/vercel-ai-sdk": "^0.0.4",
-    "@tailwindcss/postcss": "4.0.0-alpha.13",
+    "@tailwindcss/postcss": "^4.0.0",
     "@tailwindcss/typography": "^0.5.19",
     "@types/node": "20.11.17",
     "@types/react": "18.2.55",
@@ -28,7 +28,7 @@
     "resend": "^6.9.3",
     "streamdown": "^1.6.8",
     "sugar-high": "^0.6.0",
-    "tailwindcss": "4.0.0-alpha.13",
+    "tailwindcss": "^4.0.0",
     "typescript": "^5",
     "zod": "^4.3.6"
   }
