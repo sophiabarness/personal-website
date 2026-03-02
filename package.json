@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ai-sdk/gateway": "2.0.27",
+    "@ai-sdk/openai": "^3.0.37",
+    "@ai-sdk/react": "2.0.123",
+    "@braintrust/vercel-ai-sdk": "^0.0.4",
+    "@tailwindcss/postcss": "4.0.0-alpha.13",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "20.11.17",
+    "@types/react": "18.2.55",
+    "@types/react-dom": "18.2.19",
+    "ai": "5.0.121",
+    "braintrust": "^3.2.0",
+    "geist": "1.2.2",
+    "next": "^16.0.10",
+    "next-mdx-remote": "^4.4.1",
+    "postcss": "^8.4.35",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "resend": "^6.9.3",
+    "streamdown": "^1.6.8",
+    "sugar-high": "^0.6.0",
+    "tailwindcss": "4.0.0-alpha.13",
+    "typescript": "^5",
+    "zod": "^4.3.6"
+  }
+}
