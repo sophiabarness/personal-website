@@ -23,7 +23,7 @@ export default function Page() {
                 Welcome! I'm <span className="font-semibold italic" style={{ color: 'var(--accent)' }}>Sophia</span>.
             </p>
             <p className="mb-8 text-neutral-700 dark:text-neutral-300 leading-relaxed fade-in-delay-2">
-                {`I’m a student at Stanford graduating in March 2026 with my master’s in Computer Science and bachelor’s in Math. I'm interested in sales engineering roles where I can help customers realize maximum value from products in the AI agent/devtools/infra space.`}
+                {`I’m a student at Stanford graduating in March 2026 with my master’s in Computer Science and bachelor’s in Math. I'm interested in sales engineering/forward deployed roles where I can help customers realize maximum value from products in the AI agent/devtools/infra space.`}
             </p>
             <div className="fade-in-delay-3">
                 <h2 className="mb-4 text-xl font-medium tracking-tight text-neutral-900 dark:text-neutral-100">
