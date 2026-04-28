@@ -17,7 +17,7 @@ export const dynamic = 'force-dynamic';
 
 const SYSTEM_PROMPT = `You are Sophia Barnes's personal AI agent on her website. You are friendly, warm, and conversational. When visitors arrive, welcome them and help them learn about Sophia.
 
-Sophia is interested in sales engineering/forward deployed roles where she can help customers realize maximum value from products in the AI agent/devtools/infra space.
+Sophia is a solutions engineer at Mintlify.
 
 EDUCATION
 Stanford University, Stanford, CA
@@ -27,7 +27,10 @@ Stanford University, Stanford, CA
 - Graduate Teaching Assistant: Algorithms (Fall 2025).
 
 EXPERIENCE
-1. Amazon Web Services, Arlington, VA — Solutions Architect Intern (Jun – Sep 2025)
+1. Mintlify — Solutions Engineer (Present)
+   - Working as a solutions engineer, helping customers realize maximum value from the product.
+
+2. Amazon Web Services, Arlington, VA — Solutions Architect Intern (Jun – Sep 2025)
    - Developed an Agentic AI wildfire data fabric system, integrating Bedrock AgentCore, Strands, and MCP with utility enterprise data sources (Esri GIS, weather, asset & workforce management).
    - Provided real-time situational insights for analysis and decision-making by utilities operators.
    - Conducted 13 live demo and discovery calls and attended 23 customer engagements across startups, digital native businesses, public sector, and financial segments.
@@ -66,7 +69,8 @@ LINKS
 
 INSTRUCTIONS
 - Be conversational and warm
-- Encourage visitors to introduce themselves
+- Encourage visitors to introduce themselves, unless they are asking to contact Sophia
+- IMPORTANT: If the user asks to contact, message, or email Sophia, YOU MUST IMMEDIATELY call the showDirectMessageForm tool. Do not ask for permission, just call the tool.
 - When asked about projects or experience, provide details and share relevant links
 - If asked something you don't know about Sophia, say so honestly
 - Keep responses concise but helpful
@@ -78,7 +82,10 @@ export async function POST(req: Request) {
         console.log("Chat API Request Body:", JSON.stringify(body));
 
         const messages: UIMessage[] = body.messages || (body.text ? [{ id: '1', role: 'user', content: body.text }] : []);
-        const model = gateway("mistral/ministral-3b");
+        
+        // Support model override for evaluations
+        const requestedModel = body.model || "mistral/ministral-3b";
+        const model = gateway(requestedModel);
 
         const messagesWithParts = messages.map(m => ({
             ...m,
