@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
         source: '/mintlify-demo/:match*',
         destination: 'https://onboardingsophia.mintlify.app/:match*',
       },
+      {
+        source: '/mintlify-assets/:match*',
+        destination: 'https://onboardingsophia.mintlify.app/mintlify-assets/:match*',
+      },
     ]
   },
 }
