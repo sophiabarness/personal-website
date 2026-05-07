@@ -1,5 +1,18 @@
 import type { NextConfig } from 'next'
 
-const nextConfig: NextConfig = {}
+const nextConfig: NextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: '/mintlify-demo',
+        destination: 'https://onboardingsophia.mintlify.app',
+      },
+      {
+        source: '/mintlify-demo/:match*',
+        destination: 'https://onboardingsophia.mintlify.app/:match*',
+      },
+    ]
+  },
+}
 
 export default nextConfig
